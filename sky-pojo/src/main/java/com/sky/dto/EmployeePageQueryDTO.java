@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class EmployeePageQueryDTO implements Serializable {
 
     //员工姓名
+
     private String name;
 
     //页码
