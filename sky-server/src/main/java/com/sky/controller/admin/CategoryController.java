@@ -29,18 +29,18 @@ public class CategoryController {
         return Result.success();
 
     }
-    @GetMapping("/list")
-    @ApiOperation("根据类型查询分类")
-    public Result<List<Category>> list(Integer type){
-        log.info("根据类型查询分类: {}", type);
-        List<Category> categoryList = categoryService.list(type);
-        return Result.success(categoryList);
-    }
+//    @GetMapping("/list")
+//    @ApiOperation("根据类型查询分类")
+//    public Result<List<Category>> list(Integer type){
+//        log.info("根据类型查询分类: {}", type);
+//        List<Category> categoryList = categoryService.list(type);
+//        return Result.success(categoryList);
+//    }
 
     @GetMapping("/page")
     @ApiOperation("分类分页查询")
     public Result<PageResult> page(CategoryPageQueryDTO categoryPageQueryDTO){
-        log.info("分页分页查询：{}", categoryPageQueryDTO);
+        log.info("分类分页查询：{}", categoryPageQueryDTO);
         PageResult pageResult = categoryService.page(categoryPageQueryDTO);
         return Result.success(pageResult);
     }

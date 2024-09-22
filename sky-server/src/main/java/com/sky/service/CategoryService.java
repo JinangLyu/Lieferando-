@@ -11,7 +11,7 @@ import java.util.List;
 public interface CategoryService {
     void update(CategoryDTO categoryDTO);
 
-    List<Category> list(Integer type);
+//    List<Category> list(Integer type);
 
     PageResult page(CategoryPageQueryDTO categoryPageQueryDTO);
 
