@@ -20,4 +20,6 @@ public interface CategoryService {
     void delete(Long id);
 
     void switchStatus(Integer status, Long id);
+
+    List<Category> list(Integer type);
 }
